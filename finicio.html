@@ -35,22 +35,15 @@
     }
     .navbar-brand img { max-height: 50px; }
 
-    /* Bootstrap texto */
     #mainNavbar.navbar.transparent { background: transparent !important; box-shadow: none; }
     #mainNavbar.navbar.transparent .nav-link { color: #ffffff !important; }
-    #mainNavbar.navbar.transparent .navbar-brand, 
+    #mainNavbar.navbar.transparent .navbar-brand,
     #mainNavbar.navbar.transparent .navbar-brand a { color: #ffffff !important; }
 
-
-    #mainNavbar.navbar.transparent .navbar-toggler { border-color: rgba(0,0,0,0.2); }
-    #mainNavbar.navbar.transparent .navbar-toggler-icon {
-      filter: none; 
-    }
-
     /* Navbar padding */
-    body { padding-top: 70px; } 
-
+    body { padding-top: 70px; }
     section { padding: 60px 0; }
+
     /* Cards */
     .card { transition: all 0.4s ease; border: none; box-shadow: 0 0 0 rgba(0,0,0,0); }
     .card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
@@ -72,19 +65,30 @@
       <a class="navbar-brand d-flex align-items-center" href="./index.html">
         <img src="./static/img/WordTech2.png" alt="Wordtech">
       </a>
+
       <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
               aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link text-black fw-bold" href="./index.html">Productos</a></li>
           <li class="nav-item"><a class="nav-link text-black fw-bold" href="./index.html">Ofertas</a></li>
           <li class="nav-item"><a class="nav-link text-black fw-bold" href="./index.html">Contacto</a></li>
+
+          <!--  CARRITO DE COMPRAS -->
+          <li class="nav-item">
+            <a class="nav-link text-black fw-bold" href="./carrito.html">
+              <img src="./static/img/cart-icon2.png" alt="Carrito" style="width:30px; height:30px;">
+            </a>
+          </li>
+
+          <!--  ICONO USUARIO -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-black fw-bold d-flex align-items-center" href="#"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              role="button" data-bs-toggle="dropdown">
               <img src="./static/img/user icon2.png" alt="user" style="width:30px;height:30px;border-radius:50%;">
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
@@ -92,54 +96,56 @@
               <li><a class="dropdown-item" href="./registro.html">Registrarse</a></li>
             </ul>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
-<!-- SECCIÓN REGISTRO -->
-<section id="servicios" class="bg-light text-black">
-  <div class="container">
-    <h2 class="fw-bold mb-5 text-center">Accede a tu cuenta para disfrutar de ofertas exclusivas</h2>
 
-    <div class="row justify-content-center align-items-center">
-      <!-- FORMULARIO SECCION IZQUIERDA -->
-      <div class="col-md-6">
-        <div class="mb-3">
-          <label for="correo" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="correo" placeholder="Email o usuario">
-        </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="password" placeholder="Contraseña">
-        </div>
-        <div class="d-flex flex-column align-items-start">
-          <button type="button" class="btn btn-outline-dark px-4 fw-bold mb-3">Enviar</button>
-          <a href="registro.html">¿Olvidaste tu Contraseña?</a>
+  <!-- SECCIÓN REGISTRO -->
+  <section id="servicios" class="bg-light text-black">
+    <div class="container">
+      <h2 class="fw-bold mb-5 text-center">Accede a tu cuenta para disfrutar de ofertas exclusivas</h2>
+
+      <div class="row justify-content-center align-items-center">
+        <!-- FORMULARIO SECCION IZQUIERDA -->
+        <div class="col-md-6">
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="Email o usuario">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+          </div>
+          <div class="d-flex flex-column align-items-start">
+            <button type="button" class="btn btn-outline-dark px-4 fw-bold mb-3">Enviar</button>
+            <a href="registro.html">¿Olvidaste tu Contraseña?</a>
             <a href="registro.html">Crear una Cuenta</a>
+          </div>
         </div>
-      </div>
 
-      <!-- IMAGEN SECCION DERECHA -->
-      <div class="col-md-6 text-center">
-        <img src="./static/img/InicioImagen.jpg" alt="Imagen Registro" class="img-fluid" style="max-height: 400px;">
+        <!-- IMAGEN SECCION DERECHA -->
+        <div class="col-md-6 text-center">
+          <img src="./static/img/InicioImagen.jpg" alt="Imagen Registro" class="img-fluid" style="max-height: 400px;">
+        </div>
       </div>
     </div>
-  </div>
-</section>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer>
+  <!-- FOOTER -->
+  <footer>
     <p class="mb-2">© 2025 ElectroTech Store - Todos los derechos reservados</p>
     <div class="social-icons">
-    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
     </div>
-</footer>
+  </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
